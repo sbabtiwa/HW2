@@ -1,0 +1,17 @@
+<!doctype html>
+<html>
+<head>
+  <title>Form for Album</title>
+</head>
+<body>
+  <h1>Album Entry Form</h1>
+    <form action="{{url_for('album_result')}}" method="POST"> 
+      {{ form.hidden_tag() }}
+      <p>{{ form.album.label }}{{ form.album() }}</p>
+      <p>{{ form.rate.label }}{{ form.rate() }}</p>
+      {{ form.submit() }}
+  </form>
+
+</body>
+</html>
+

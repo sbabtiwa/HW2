@@ -1,0 +1,15 @@
+<!doctype html>
+<html>
+<head>
+  <title>Album Submission Results</title>
+</head>
+<body>
+    <h1>Your Album Submission Results</h1>
+      <form action="{{url_for('album_result')}}" method="POST">
+      {{ form.hidden_tag() }}
+      <h3> Thanks for filling this form out! Here is what we got: </h3>
+      <p> The title of the album you submitted is <strong>{{ album}} </strong> </p>
+      <p> You gave the album a rating of <strong> {{ rating }} </strong> out of 3. </p>
+  </form>
+</body>
+</html>
