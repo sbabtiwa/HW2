@@ -75,7 +75,7 @@ def artist_specific(artist_name):
 @app.route("/album_entry")
 def album_entry():
 	albumform = AlbumEntryForm()
-	return render_template("album_entry.html", form= albumform)
+	return render_template("album_entry.html", form = albumform)
 
 @app.route("/album_result", methods = ["GET", "POST"])
 def album_result():
